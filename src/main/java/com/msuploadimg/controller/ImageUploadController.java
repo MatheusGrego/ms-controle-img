@@ -11,7 +11,6 @@ import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-
 public class ImageUploadController {
 
     @PostMapping("/upload-img")
