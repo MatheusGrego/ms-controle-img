@@ -1,4 +1,4 @@
-package com.msuploadarquivos.exceptions;
+package com.msuploadarquivos.model.response;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

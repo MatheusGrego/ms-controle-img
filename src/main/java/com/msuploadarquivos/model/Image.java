@@ -18,6 +18,5 @@ public class Image {
 
     private String name;
 
-    @Lob
-    private byte[] content;
+    private String path;
 }

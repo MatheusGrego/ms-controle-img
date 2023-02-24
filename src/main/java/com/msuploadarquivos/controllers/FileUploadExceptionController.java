@@ -1,6 +1,6 @@
 package com.msuploadarquivos.controllers;
 
-import com.msuploadarquivos.exceptions.ErrorResponse;
+import com.msuploadarquivos.model.response.ErrorResponse;
 import com.msuploadarquivos.exceptions.TooManyFilesException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
