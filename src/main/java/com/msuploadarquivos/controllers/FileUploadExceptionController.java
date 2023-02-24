@@ -1,6 +1,7 @@
-package com.msuploadimg.controllers;
+package com.msuploadarquivos.controllers;
 
-import com.msuploadimg.exceptions.ErrorResponse;
+import com.msuploadarquivos.exceptions.ErrorResponse;
+import com.msuploadarquivos.exceptions.TooManyFilesException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -23,4 +24,9 @@ public class FileUploadExceptionController {
         return ResponseEntity.status(errorResponse.getStatus()).body(errorResponse);
     }
 
+    @ExceptionHandler(value = TooManyFilesException.class)
+    public ResponseEntity<ErrorResponse> handlerVariosArquivos(TooManyFilesException e) {
+        ErrorResponse errorResponse = new ErrorResponse(HttpStatus.BAD_REQUEST.value(), "Não permitimos mais de um arquivo!");
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponse);
+    }
 }

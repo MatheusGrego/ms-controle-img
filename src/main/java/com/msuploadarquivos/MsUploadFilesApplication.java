@@ -1,4 +1,4 @@
-package com.msuploadimg;
+package com.msuploadarquivos;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.ApplicationRunner;
@@ -9,10 +9,10 @@ import org.springframework.core.env.Environment;
 
 @Log4j2
 @SpringBootApplication
-public class MsUploadImgApplication {
+public class MsUploadFilesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsUploadImgApplication.class, args);
+        SpringApplication.run(MsUploadFilesApplication.class, args);
     }
 
 

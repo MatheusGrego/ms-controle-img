@@ -1,4 +1,4 @@
-package com.msuploadimg.exceptions;
+package com.msuploadarquivos.exceptions;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,10 +1,10 @@
-package com.msuploadimg;
+package com.msuploadarquivos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsUploadImgApplicationTests {
+class MsUploadFilesApplicationTests {
 
 	@Test
 	void contextLoads() {
